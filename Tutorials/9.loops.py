@@ -55,3 +55,43 @@ for i in range(1, 6):
 ## 3) pass (do nothing)
 for i in range(5):
     pass
+
+
+## For loop with else
+# else runs only if the loop finishes normally
+# else will not run if loop is terminated by break
+for i in range(1, 6):
+    print(i)    
+else:
+    print("Loop completed successfully")    
+
+# output:
+# 1
+# 2
+# 3
+# 4
+# 5
+# Loop completed successfully
+
+for i in range(1, 6):
+    if i == 3:
+        break
+    print(i)
+else:
+    print("Loop completed successfully")
+
+# output:
+# 1
+# 2
+# (else block not executed because of break)
+
+## Enumerate() function
+# adds a counter to an iterable and returns it as an enumerate object
+fruits = ["apple", "banana", "mango"]
+for index, fruit in enumerate(fruits):
+    print(index, fruit)
+# output:
+# 0 apple   
+# 1 banana
+# 2 mango
+

@@ -15,3 +15,8 @@ else:
 # print(a==18)
 # print(a<18)
 # print(a!=18)
+
+# short hand if-else (ternary operator)
+age = int(input("Enter your age: "))
+status = "Adult" if age >= 18 else "Minor"
+print("You are an", status)
