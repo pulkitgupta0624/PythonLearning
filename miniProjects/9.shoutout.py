@@ -14,10 +14,10 @@ import win32com.client
 
 speaker = win32com.client.Dispatch("SAPI.SpVoice")
 
-l = ["Pulkit", "Ankit", "Rohit", "Saksham"]
+l = ["Pulkit", "Palak", "Rohit", "Saksham"]
 
 for name in l:
-    text = f"kyaa haal chal hai {name}"
+    text = f" how are you :  {name}"
     print(text)
     speaker.Speak(text)
 
